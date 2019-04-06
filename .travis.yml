@@ -5,14 +5,9 @@ install:
 - pip install pipenv
 - pipenv install pytest --dev
 - pipenv run python setup.py install
-- pipenv run python -m pytest
-
-script: python -m pytest
+script: python -c "import pepallow"
 deploy:
   provider: pypi
   user: BTaskaya
   password:
-    secure:
-    FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
-    FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
-    FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
+    secure: 5G0KWEuEEyViPkL3YUYC9hJt8TwtZlIBlTb91odnCosDRBGnVg7dgUU3Uma4OMmI1rdw0GTozBd97ow2bCPCSD59Vkks+65AFq1aE/TbboL7goRvg8LjMrNHMQsmuuufSfEv9OQVh9tefHJQ6LQ9LGrwRRC6PYlkqo1c3UwPIepBgh2yFx8SO3+cqmvq5neOBdm1HjF1Z097J5OOFdyRao9WtNSAmcyoJF4qMYyBGXGSgcxi3OEzFGe0vUGFf4zWWdbuZh9X8cXCZgq3MAE/d2mHNRa5ohLseN0mQmaGCyDoW/2BErwts9rXBbmFsUoHRywGlTBNFEKVK2DXqQAdJog41bhgyRN0ploYVbygL6/kMIz7pWHaevteS7JRUmP1mTt2eO1nLLANI1c9WTEWjZa17Ok6xaHWaiTdMlzi2pfzhFGzLFNivLtLMtzHg1NqNo6KgfYkQNSTC59X+zL+fyuVAaY0iEQdNDdHObd5MgrebsKXwmkanFBTVy2jbHwg68URBxqNMZ/hdb4TEDyRY7CXbl/CHH13Z7Z9zPyaJxIuqB1SpuV8tIQFtdkqLhpsVZ3ClW1/x01CzJF+MTgdnGAzrDJJO8Id+FZGhSt3ENQwZVcAishqaFx0JA0RlN3duoruy6CalQkHjQv9TGQU/cyR/8doJQMc1iE/+lHb6fw=
