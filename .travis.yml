@@ -1,0 +1,18 @@
+dist: xenial
+language: python
+python: 3.7
+install:
+- pip install pipenv
+- pipenv install pytest --dev
+- pipenv run python setup.py install
+- pipenv run python -m pytest
+
+script: python -m pytest
+deploy:
+  provider: pypi
+  user: BTaskaya
+  password:
+    secure:
+    FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
+    FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
+    FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL 
