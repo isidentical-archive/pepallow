@@ -1,21 +1,7 @@
 import ast
 import sys
 from contextlib import suppress, ExitStack
-
-from pepallow.peps.p211 import PEP211Transformer
-from pepallow.peps.p231 import PEP231Transformer
-from pepallow.peps.p276 import PEP276Transformer
-from pepallow.peps.p313 import PEP313Transformer
-from pepallow.peps.p377 import PEP377Transformer
-
-PEPS = {
-    211: {"transformer": PEP211Transformer, "suppress": [TypeError]},
-    276: {"transformer": PEP276Transformer, "suppress": [TypeError]},
-    231: {"transformer": PEP231Transformer, "suppress": [AttributeError]},
-    313: {"transformer": PEP313Transformer, "suppress": [NameError]},
-    377: {"transformer": PEP377Transformer, "suppress": [NameError]},
-}
-
+from pepallow.peps import PEPS
 
 class TreeHandler:
     def __init__(self, tree):

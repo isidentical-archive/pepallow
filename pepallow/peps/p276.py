@@ -1,6 +1,8 @@
 import ast
 from pepallow import HandledTransformer
 
+NUMBER = 276
+SUPPRESS = (TypeError,)
 
 class PEP276Transformer(HandledTransformer):
     """
