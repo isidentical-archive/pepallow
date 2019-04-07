@@ -5,15 +5,7 @@ dependicies.
 https://github.com/abstractequalsmagic/romana/
 """
 
-ROMAN_LITERALS = {
-    "I": 1,
-    "V": 5,
-    "X": 10,
-    "L": 50,
-    "C": 100,
-    "D": 500,
-    "M": 1000
-}
+ROMAN_LITERALS = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
 
 def roman(roman_lit):
