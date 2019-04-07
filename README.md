@@ -4,6 +4,7 @@ See what happens if a pep was accepted.
 ## Supporteds
 - PEP211
 - PEP231
+- PEP276
 - PEP313
 ## Demo
 [![asciicast](https://asciinema.org/a/239257.svg)](https://asciinema.org/a/239257)
