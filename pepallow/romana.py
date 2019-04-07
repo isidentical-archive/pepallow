@@ -6,7 +6,7 @@ https://github.com/abstractequalsmagic/romana/
 """
 
 ROMAN_LITERALS = {
-    "I": 1,,
+    "I": 1,
     "V": 5,
     "X": 10,
     "L": 50,
@@ -30,4 +30,4 @@ def roman(roman_lit):
         elif literal <= result:
             result += literal
 
-return result
+    return result
