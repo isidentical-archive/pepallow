@@ -2,7 +2,10 @@ from pepallow.allow import Allow
 from pepallow.peps.p231 import AssetBean as Bean
 
 with Allow(211):
-    pass
+    s = [1, 2, 3]
+    t = "abc"
+    for i, j in s @ t:
+        print(f"{i}{j}")
         
 with Allow(231):
     b = Bean(3)
