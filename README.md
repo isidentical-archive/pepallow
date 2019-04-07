@@ -2,12 +2,12 @@
 ![pepalllow](pepallow.png)
 See what happens if a pep was accepted.
 ## Supporteds
-- PEP211
-- PEP231
-- PEP276
-- PEP313
-- PEP336
-- PEP377
+- [PEP211](https://www.python.org/dev/peps/pep-0211/) - Adding A New Outer Product Operator
+- [PEP231](https://www.python.org/dev/peps/pep-0231/) - \_\_findattr\_\_()
+- [PEP276](https://www.python.org/dev/peps/pep-0276/) - Simple Iterator for ints
+- [PEP313](https://www.python.org/dev/peps/pep-0313/) - Adding Roman Numeral Literals to Python
+- [PEP336](https://www.python.org/dev/peps/pep-0336/) - Make None Callable
+- [PEP377](https://www.python.org/dev/peps/pep-0377/) - Allow \_\_enter\_\_() methods to skip the statement body
 ## Usage
 ```py
 from pepallow.allow import Allow
