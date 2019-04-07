@@ -1,8 +1,8 @@
 import ast
-from astpretty import *
+from pepallow import HandledTransformer
 
 
-class PEP231Transformer(ast.NodeTransformer):
+class PEP231Transformer(HandledTransformer):
     def visit_Attribute(self, node):
         name = node.value
         attr = node.attr

@@ -6,6 +6,7 @@ See what happens if a pep was accepted.
 - PEP231
 - PEP276
 - PEP313
+- PEP377
 ## Usage
 ```py
 from pepallow.allow import Allow

@@ -1,11 +1,13 @@
 import ast
+from pepallow import HandledTransformer
+
 try:
     # Try original version first.
     from romana.romana import roman
 except ImportError:
     from pepallow.romana import roman
 
-class PEP313Transformer(ast.NodeTransformer):
+class PEP313Transformer(HandledTransformer):
     """
     PEP313 => Adding Roman Numeral Literals to Python
     

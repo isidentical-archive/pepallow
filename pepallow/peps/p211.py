@@ -1,7 +1,8 @@
 import ast
+from pepallow import HandledTransformer
 
 
-class PEP211Transformer(ast.NodeTransformer):
+class PEP211Transformer(HandledTransformer):
     """
     PEP211 => Adding A New Outer Product Operator
     

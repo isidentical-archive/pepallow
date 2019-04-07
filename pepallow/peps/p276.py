@@ -1,7 +1,8 @@
 import ast
+from pepallow import HandledTransformer
 
 
-class PEP276Transformer(ast.NodeTransformer):
+class PEP276Transformer(HandledTransformer):
     """
     PEP276 => Iterator ints
     
