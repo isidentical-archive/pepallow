@@ -19,6 +19,7 @@ with Allow(231):
     assert b.foo == 3
     b.foo = 4
     assert b.foo == 4
+    print(b.foo)
 
 with Allow(276):
     counter = 0
@@ -34,4 +35,7 @@ with Allow(313):
     assert IV + I == V
     assert VI + M == 1006
     assert (M - D) + VI - X == (500) + 6 - 10
+    
+with Allow(336):
+    print(None()() is None)
     

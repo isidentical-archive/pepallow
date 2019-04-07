@@ -10,6 +10,8 @@ except ImportError:
 
 NUMBER = 313
 SUPPRESS = (NameError,)
+
+
 class PEP313Transformer(HandledTransformer):
     """
     PEP313 => Adding Roman Numeral Literals to Python

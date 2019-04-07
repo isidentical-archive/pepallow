@@ -4,6 +4,7 @@ from pepallow import HandledTransformer
 NUMBER = 377
 SUPPRESS = (NameError,)
 
+
 class PEP377Transformer(HandledTransformer):
     def visit_Name(self, node):
         if node.id == "StatementSkipped" and ("stk" not in self.handler._inserteds):

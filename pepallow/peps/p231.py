@@ -4,6 +4,7 @@ from pepallow import HandledTransformer
 NUMBER = 231
 SUPPRESS = (AttributeError,)
 
+
 class PEP231Transformer(HandledTransformer):
     def visit_Attribute(self, node):
         name = node.value

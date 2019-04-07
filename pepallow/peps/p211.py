@@ -4,6 +4,7 @@ from pepallow import HandledTransformer
 NUMBER = 211
 SUPPRESS = (TypeError,)
 
+
 class PEP211Transformer(HandledTransformer):
     """
     PEP211 => Adding A New Outer Product Operator
@@ -25,10 +26,12 @@ class PEP211Transformer(HandledTransformer):
             and isinstance(node.iter.op, ast.MatMult)
         ):
             if len(node.target.elts) < 2:
-                raise ValueError(f"Not enough values to unpack (expected 2, got {len(node.target.elts)})")
+                raise ValueError(
+                    f"Not enough values to unpack (expected 2, got {len(node.target.elts)})"
+                )
             elif len(node.target.elts) > 2:
-                raise ValueError("Too many values to unpack (expected 2)") 
-                
+                raise ValueError("Too many values to unpack (expected 2)")
+
             a, b = node.target.elts
             return ast.For(
                 target=a,

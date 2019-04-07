@@ -3,6 +3,7 @@ import sys
 from contextlib import suppress, ExitStack
 from pepallow.peps import PEPS
 
+
 class TreeHandler:
     def __init__(self, tree):
         self.tree = tree
