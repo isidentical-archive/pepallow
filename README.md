@@ -6,8 +6,6 @@ See what happens if a pep was accepted.
 - PEP231
 - PEP276
 - PEP313
-## Demo
-[![asciicast](https://asciinema.org/a/239257.svg)](https://asciinema.org/a/239257)
 ## Usage
 ```py
 from pepallow.allow import Allow
