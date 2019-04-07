@@ -1,4 +1,5 @@
 # PEPAllow
+![pepalllow](pepallow.png)
 See what happens if a pep was accepted.
 ## Supporteds
 - PEP211
