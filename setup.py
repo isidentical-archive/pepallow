@@ -8,7 +8,7 @@ with open(current_dir / "README.md", encoding="utf-8") as f:
     
 setup(
     name="pepallow",
-    version="0.3.2",
+    version="0.3.3",
     packages=find_packages(),
     url="https://github.com/abstractequalsmagic/pepallow",
     description = "Hack the interpreter for running rejected pep's changes.",

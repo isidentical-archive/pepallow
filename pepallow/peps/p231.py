@@ -7,14 +7,18 @@ class PEP231Transformer(HandledTransformer):
         name = node.value
         attr = node.attr
         ctx = node.ctx
-        
+
         if isinstance(ctx, ast.Load):
             node = ast.IfExp(
-                ast.Call(ast.Name("hasattr", ast.Load()), [name, ast.Str("__findattr__")], []),
-                ast.Call(ast.Attribute(name, "__findattr__", ast.Load()), [ast.Str(attr)], []),
+                ast.Call(
+                    ast.Name("hasattr", ast.Load()), [name, ast.Str("__findattr__")], []
+                ),
+                ast.Call(
+                    ast.Attribute(name, "__findattr__", ast.Load()), [ast.Str(attr)], []
+                ),
                 orelse=ast.Attribute(name, attr, ctx),
             )
-        
+
         return node
 
     def visit_Assign(self, node):
@@ -23,13 +27,27 @@ class PEP231Transformer(HandledTransformer):
             name = target.value
             attr = target.attr
             ctx = target.ctx
-            
-            node = ast.Expr(ast.IfExp(
-                ast.Call(ast.Name("hasattr", ast.Load()), [name, ast.Str("__findattr__")], []),
-                ast.Call(ast.Attribute(name, "__findattr__", ast.Load()), [ast.Str(attr), node.value], []),
-                orelse=ast.Call(ast.Name("setattr", ast.Load()), [name, ast.Str(attr), node.value], []),
-            ))
-            
+
+            node = ast.Expr(
+                ast.IfExp(
+                    ast.Call(
+                        ast.Name("hasattr", ast.Load()),
+                        [name, ast.Str("__findattr__")],
+                        [],
+                    ),
+                    ast.Call(
+                        ast.Attribute(name, "__findattr__", ast.Load()),
+                        [ast.Str(attr), node.value],
+                        [],
+                    ),
+                    orelse=ast.Call(
+                        ast.Name("setattr", ast.Load()),
+                        [name, ast.Str(attr), node.value],
+                        [],
+                    ),
+                )
+            )
+
         return node
 
 
@@ -37,6 +55,7 @@ class AssetBean:
     """
     Directly copied from https://www.python.org/dev/peps/pep-0231/
     """
+
     def __init__(self, x):
         self.__myfoo = x
 
