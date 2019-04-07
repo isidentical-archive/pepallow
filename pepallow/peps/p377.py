@@ -18,9 +18,9 @@ class PEP377Transformer(HandledTransformer):
                         ],
                         [],
                     ),
-                ),
+                )
             )
-
+            
         return node
 
     def visit_With(self, node):
@@ -36,10 +36,7 @@ class PEP377Transformer(HandledTransformer):
             assign = (
                 ast.Pass()
                 if node.items[0] is None
-                else ast.Assign(
-                    [node.items[0].optional_vars],
-                    ast.Name("StatementSkipped", ast.Load()),
-                )
+                else ast.Assign([node.items[0].optional_vars], ast.Name("StatementSkipped", ast.Load()))
             )
             node = ast.Try(
                 [node],

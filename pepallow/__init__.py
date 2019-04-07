@@ -1,6 +1,5 @@
 import ast
 
-
 class HandledTransformer(ast.NodeTransformer):
     def __init__(self, handler, *args, **kwargs):
         self.handler = handler
