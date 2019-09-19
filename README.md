@@ -1,5 +1,7 @@
 # PEPAllow
 ![pepalllow](pepallow.png)
+> Deprecated, please use [rewritten](https://github.com/thg-consulting/pepgrave) version. 
+
 See what happens if a pep was accepted.
 ## Supporteds
 - [PEP211](https://www.python.org/dev/peps/pep-0211/) - Adding A New Outer Product Operator
@@ -22,5 +24,3 @@ with Allow(211):
         pass
 ...
 ```
-## How It Works
-When you import `pepallow.allow`, it reimport your module then patch it with `pepallow.peps/*` items. The items uses power of the `AST` module cpython gave us.
