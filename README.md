@@ -1,6 +1,5 @@
 # PEPAllow
 ![pepalllow](pepallow.png)
-> Deprecated, please use [rewritten](https://github.com/thg-consulting/pepgrave) version. 
 
 See what happens if a pep was accepted.
 ## Supporteds
